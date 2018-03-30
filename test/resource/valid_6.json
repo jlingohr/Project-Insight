@@ -1,0 +1,24 @@
+{
+  "WHERE":{
+    "AND":[
+      {
+        "GT": {
+          "courses_avg": 97
+        }
+      },
+      {
+        "GT": {
+          "courses_year": 2015
+        }
+      }
+    ]
+  },
+  "OPTIONS":{
+    "COLUMNS":[
+      "courses_dept",
+      "courses_id",
+      "courses_avg",
+      "courses_year"
+    ]
+  }
+}

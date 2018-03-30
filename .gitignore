@@ -1,0 +1,16 @@
+src/data/data.txt
+src/data/resource/courses.txt
+src/data/resource/rooms.txt
+src/*.js
+src/*.map
+src/**/*.js
+src/**/*.map
+test/*.js
+test/*.map
+npm-debug.log
+mochawesome-reports/
+node_modules/
+.idea/
+.yarnclean
+.DS_Store
+coverage/

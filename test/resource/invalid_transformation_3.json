@@ -1,0 +1,30 @@
+{
+  "WHERE": {
+    "AND": [{
+      "IS": {
+        "rooms_furniture": "*Tables*"
+      }
+    }, {
+      "GT": {
+        "rooms_seats": 300
+      }
+    }]
+  },
+  "OPTIONS": {
+    "COLUMNS": [
+      "rooms_furniture",
+      "maxFurniture"
+    ],
+    "ORDER": {
+      "dir": "DOWN",
+      "keys": ["maxFurniture"]
+    }
+  },
+  "TRANSFORMATIONS": {
+    "APPLY": [{
+      "maxFurniture": {
+        "MAX": "rooms_furniture"
+      }
+    }]
+  }
+}

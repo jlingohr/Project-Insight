@@ -1,0 +1,33 @@
+{
+  "WHERE":{
+    "OR":[
+      {
+        "AND":[
+          {
+            "GT":{
+              "rooms_avg":90
+            }
+          },
+          {
+            "IS":{
+              "rooms_dept":"adhe"
+            }
+          }
+        ]
+      },
+      {
+        "EQ":{
+          "rooms_avg":95
+        }
+      }
+    ]
+  },
+  "OPTIONS":{
+    "COLUMNS":[
+      "rooms_dept",
+      "rooms_id",
+      "rooms_avg"
+    ],
+    "ORDER":"rooms_avg"
+  }
+}

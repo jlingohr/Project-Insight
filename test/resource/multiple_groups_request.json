@@ -1,0 +1,30 @@
+{
+  "WHERE": {
+    "IS": {
+      "courses_dept": "cpsc"
+    }
+  },
+  "OPTIONS": {
+    "COLUMNS": [
+      "courses_dept",
+      "courses_title",
+      "average",
+      "sectionsOffered"
+    ]
+  },
+  "TRANSFORMATIONS": {
+    "GROUP": ["courses_dept", "courses_title"],
+    "APPLY": [
+      {
+        "average": {
+          "AVG": "courses_avg"
+        }
+      },
+      {
+        "sectionsOffered": {
+          "COUNT": "courses_uuid"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "WHERE": { },
+  "OPTIONS": {
+    "COLUMNS": [
+      "courses_instructor"
+    ],
+    "ORDER": "courses_instructor"
+  },
+  "TRANSFORMATIONS": {
+    "GROUP": ["courses_instructor"],
+    "APPLY": [ { "sillySumYears":
+    { "SUM": "courses_year" } } ]
+  }
+}
